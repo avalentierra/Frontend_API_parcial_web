@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Front Parcial 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Agregar Venta</h2>
+            
+            <div class="col s8 m4">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title center">Este formulario registra una nueva venta</span>
+                  </div>
+                  <div class="card-action">
+                      <div class="row center">
+                          <div class="col s12">
+                              <form id="formulario">
+                              <input type="text" name="nombre_empleado" placeholder="Nombre del Empleado" id="nombre_empleado">
+                              <input type="text" name="nombre_cliente" placeholder="Nombre del Cliente" id="nombre_cliente">
+                              <input type="text" name="nombre_producto" placeholder="Nombre del Producto" id="nombre_producto">
+                              <input type="number" name="precio" placeholder="Precio del Producto" id="precio">
+                              <input type="date" name="fecha_compra" id="fecha_compra" placeholder="Fecha de la Compra">
+                              <button type="submit" class="waves-effect waves-light btn-large">Guardar</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+            <h1>Ventas</h1>
+            <div  class="col s12 m6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">nombre_empleado</th>
+                            <th scope="col">nombre_cliente</th>
+                            <th scope="col">nombre_producto</th>
+                            <th scope="col">precio</th>
+                            <th scope="col">fecha</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ventas-lista">
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+     
+</body>
+
+</html>
