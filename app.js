@@ -46,6 +46,9 @@ $('#formulario').submit(function (event) {
             precio: precio,
             fecha_compra:fecha_compra
         },
+        success: function (data) {
+            mostrarVentas();
+        },
        
     });
 });
